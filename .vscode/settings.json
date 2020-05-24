@@ -1,0 +1,13 @@
+{
+  "eslint.format.enable": true,
+  "editor.formatOnSave": false,
+  "stylelint.enable": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[php]": {
+    "editor.defaultFormatter": "wongjn.php-sniffer"
+  },
+  "phpSniffer.autoDetect": true,
+  "phpSniffer.run": "onType"
+}
