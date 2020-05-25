@@ -9,5 +9,8 @@
     "editor.defaultFormatter": "wongjn.php-sniffer"
   },
   "phpSniffer.autoDetect": true,
-  "phpSniffer.run": "onType"
+  "phpSniffer.run": "onType",
+  "intelephense.files.maxSize": 3500000,
+  "intelephense.format.enable": false,
+  "intelephense.diagnostics.enable": false
 }
