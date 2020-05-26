@@ -1,5 +1,9 @@
 {
+  "eslint.enable": true,
   "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
   "editor.formatOnSave": false,
   "stylelint.enable": true,
   "[javascript]": {
