@@ -143,10 +143,11 @@ add_action( 'widgets_init', 'kiastarter_widgets_init' );
  * Enqueue scripts and styles.
  */
 function kiastarter_scripts() {
-	wp_enqueue_style( ' kiastarter-style', get_stylesheet_uri(), array(), kiastarter_VERSION );
+	wp_enqueue_style( ' kiastarter-style', get_template_directory_uri() . '/dist/styles/style.css', array(), kiastarter_VERSION );
 	wp_style_add_data( ' kiastarter-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( ' kiastarter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), kiastarter_VERSION, true );
+	// wp_enqueue_script( ' kiastarter-navigation', get_template_directory_uri() . '/js/navigation.js', array(), kiastarter_VERSION, true );
+	wp_enqueue_script( ' kiastarter-navigation', get_template_directory_uri() . '/dist/scripts/app.js', array(), kiastarter_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
